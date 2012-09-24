@@ -187,4 +187,4 @@ def kill_pid(pid):
     finally:
         K32DLL.CloseHandle(handle)
 
-__all__ = ['list_pids','get_pid_info', 'kill_pid']
+__all__ = ['list_pids', 'get_pid_info', 'kill_pid', 'OperationException']

@@ -25,4 +25,4 @@ def get_pid_info(pid):
 def kill_pid(pid):
     os.kill(pid, signal.SIGTERM)
 
-__all__ = ['list_pids','get_pid_info', 'kill_pid']
+__all__ = ['list_pids', 'get_pid_info', 'kill_pid', 'OperationException']
