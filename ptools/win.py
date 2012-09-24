@@ -1,4 +1,4 @@
-
+from ptools import OperationException
 # CTYPES RULEZ!
 import ctypes
 from ctypes.wintypes import (HANDLE, DWORD, BOOL, WCHAR, POINTER,
@@ -44,12 +44,6 @@ class UNICODE_STRING(ctypes.Structure):
         ('MaximumLength', USHORT),
         ('Buffer', PTR)
     ]
-
-class OperationException(Exception):
-    """Raised when an operation can't be performed
-
-    """
-    pass
 
 class WindowsOperationException(OperationException):
     def __init__(self, message):
