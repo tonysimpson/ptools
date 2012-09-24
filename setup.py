@@ -10,8 +10,9 @@ setup (
     author='The Test People',
     author_email='tony.simpson@thetestpeople.com',
     maintainer='Tony Simpson',
+    url='https://github.com/tonysimpson/ptools',
     license='MIT',
     packages=['ptools'],
-    long_description=open('README.md').read(),
+    long_description=open('README').read(),
 )
 
