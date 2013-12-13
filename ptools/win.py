@@ -150,6 +150,8 @@ def get_pid_info(pid):
                                   user_process_parameter_address + 16 + (12 * ctypes.sizeof(PTR)))
         env = read_environ_from_process_vm(handle, environ_address)
         return (cmd_line, env)
+    except TypeError as exc:
+        raise OperationException(exc.message)
     finally:
         K32DLL.CloseHandle(handle)
 
