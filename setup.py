@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup (
     name='ptools',
-    version='1.0b2',
+    version='1.0b3',
     description='Cross Platform Process Infomation (cmdline, environ) and Management',
     author='The Test People',
     author_email='tony.simpson@thetestpeople.com',
